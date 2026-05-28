@@ -536,6 +536,13 @@ const DASHBOARD_DATA = {
       </div>
     `;
 
+    // ── Info bar ─────────────────────────────────────────────────────────────
+    html += `
+      <div style="color:var(--muted);font-size:12px;margin-bottom:20px;padding:8px 12px;background:var(--surface);border:1px solid var(--border);border-radius:6px;">
+        Automated prediction market analysis · Kalshi · CFTC-regulated · 15-min crypto contracts · Paper trading only
+      </div>
+    `;
+
     // ── Asset breakdown ──────────────────────────────────────────────────────
     const assetKeys = Object.keys(asset_stats);
     if (assetKeys.length > 0) {
