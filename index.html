@@ -514,8 +514,8 @@ const DASHBOARD_DATA = {
   // Small delay to ensure dashboard_data.js has executed
   setTimeout(boot, 100);
 
-  // Auto-refresh every 4 minutes to match pipeline cadence
-  setTimeout(() => location.reload(), 4 * 60 * 1000);
+  // Auto-refresh every 60 seconds for near-real-time updates
+  setTimeout(() => location.reload(), 60 * 1000);
 })();
 </script>
 </body>
